@@ -14,5 +14,5 @@ I Used Tech:
    - PHP  >> I Think for every Thing. 🤔 
    - PhpMyAdmin  >> Database for Saveing Tasks.
    - Font Awesome 👌, And Google Fonts.
-You can see The App From (Here)[http://thomas-emad.ml/projects/todo/].
+You can see The App From [Here](http://thomas-emad.ml/projects/todo/).
 Good Luck, And See You Later. 👀 
