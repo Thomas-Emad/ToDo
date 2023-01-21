@@ -7,12 +7,15 @@
 - Two Done the Tasks
 After You Transformation Any Task You can Change Status Again,
 And you Can rename the Task Or Delete It.
-I Used Tech: 
-   - Html >> for the code
-   - Css  >> Style
-   - Js   >> one Event Onclick
-   - PHP  >> I Think for every Thing. 🤔 
-   - PhpMyAdmin  >> Database for Saveing Tasks.
-   - Font Awesome 👌, And Google Fonts.
-You can see The App From [Here](http://thomas-emad.ml/projects/todo/).
+
+#### I Used Tech: 
+```
+- Html >> for the code
+- Css  >> Style
+- Js   >> one Event Onclick
+- PHP  >> I Think for every Thing. 🤔 
+- PhpMyAdmin  >> Database for Saveing Tasks.
+- Font Awesome 👌, And Google Fonts.
+```
+###### You can see The App From [Here](http://thomas-emad.ml/projects/todo/).
 Good Luck, And See You Later. 👀 
