@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;500;700;800&display=swap");
+body {
+  background-color: #222;
+  margin: 0;
+  color: #fff;
+  font-family: "Cairo", sans-serif !important;
+}
+/* style Box Add Task */
+.add_task {
+  margin: 15px 0;
+}
+.add_task .container form {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+input {
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  outline: none;
+  background-color: #eee;
+}
+select {
+  cursor: pointer;
+}
+.add_task .container form input:not([type="submit"]) {
+  width: calc(50% - 10px);
+}
+.add_task .container form input[type="submit"] {
+  width: 20%;
+}
+input[type="submit"] {
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  outline: none;
+  background-color: #eee;
+  transition: 0.4s;
+}
+input[type="text"] {
+  width: 40%;
+}
+.add_task .container form textarea {
+  width: calc(100% - 10px);
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(197, 197, 197);
+  transition: 0.4s;
+  padding: 7px;
+}
+.add_task .container form textarea:hover {
+  background-color: #eee;
+}
+@media (max-width: 410px) {
+  .add_task .container form {
+    flex-direction: column;
+  }
+  .add_task .container form input:not([type="submit"]) {
+    width: 90%;
+  }
+  .add_task .container form input[type="submit"] {
+    width: 50%;
+  }
+  .show_task .container .box .tasks .box .actions {
+    flex-direction: column-reverse;
+  }
+}
+/* style Box show Task */
+.show_task .container {
+  display: flex;
+  gap: 5px;
+}
+@media (max-width: 767px) {
+  .show_task .container {
+    flex-direction: column;
+  }
+}
+.show_task .container .box {
+  background-color: #444;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+}
+.show_task .container .box .title_section {
+  margin: 0 0 10px 0;
+}
+
+.show_task .container .box .tasks {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+}
+.show_task .container .box .tasks .box {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #666;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+.show_task .container .box .tasks .box .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.show_task .container .box .tasks .box .actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.show_task .container .box .tasks .box .actions .date {
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.show_task .container .box .tasks .box .actions .icon {
+  cursor: pointer;
+}
+.show_task .container .box .tasks .box .edit {
+  transform: scaleY(0);
+  transition: 0.4s;
+  transform-origin: top;
+  display: none;
+  margin-top: 10px;
+  gap: 5px;
+}
+
+/* Some Edits */
+input[type="submit"]:hover {
+  background: #00bcd4;
+  box-shadow: 0 0 4px 1px #00bcd4;
+  color: #fff;
+}
+.add_task .container form input[type="submit"]:hover,
+.show_task .container .box .tasks .box .actions .done:hover {
+  background: #4caf50;
+  box-shadow: 0 0 4px 1px #4caf50;
+  color: #fff;
+}
+.show_task .container .box .tasks .box .actions .del:hover {
+  background: #f44336;
+  box-shadow: 0 0 4px 1px #f44336;
+  color: #fff;
+}
